@@ -73,7 +73,7 @@ The icon's code is:
 
 ## Example
 
-If you want to change the default icon of the RadDataGrid OptionsButton with one of the following icons above, set the icon code to the OptionsButtonText property:
+If you want to change the default icon of the RadDataGrid OptionsButton with one of the following icons above, set the icon code to the *OptionsButtonText* property:
 
 The gear icon's code is: **0xe80f** and the final code result that should be set to the OptionsButtonText property is **&amp;#xE80F;**
 
@@ -82,9 +82,12 @@ You have to
 * capitalize all the letters
 * put a semicolon at the end of the string
 
+and set the IconsFont as a StaticResource to the *OptionsButtonFontFamily*
+
 ```XAML
 <telerikGrid:DataGridTextColumn.HeaderStyle>
-    <telerikGrid:DataGridColumnHeaderStyle OptionsButtonText="&#xE80F;"/>
+    <telerikGrid:DataGridColumnHeaderStyle OptionsButtonText="&#xE80F;"
+	                                       OptionsButtonFontFamily="{StaticResource IconsFont}"/>
 </telerikGrid:DataGridTextColumn.HeaderStyle>
 ```
 
