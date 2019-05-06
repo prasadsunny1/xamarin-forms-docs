@@ -11,7 +11,7 @@ The cell swipe feature allows end-users to use swipe gesture on cells. When the 
 
 ## Properties
 
-The following RadListView properties are related to the sell swiping feature:
+The following RadListView properties are related to the cell swiping feature:
 
 - **IsItemSwipeEnabled** (bool): Turns on or off the feature. It's default value is false.
 - **SwipeThreshhold** (double): Gets or sets the length (in pixels) of the swipe gesture which is required to trigger the feature. Any shorter swipe will not be respected. It's default value is 0.
@@ -26,7 +26,7 @@ In *iOS* however, the **SwipeThreshhold** property should be set to force the it
 
 ## Methods
 
-The following RadListView methods are related to the sell swiping feature:
+The following RadListView methods are related to the cell swiping feature:
 
 - void **EndItemSwipe**(bool *isAnimated*): Moves the swiped item to its default position.
 
